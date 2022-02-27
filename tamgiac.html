@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Nhập cạnh a");
+        let b = prompt("Nhập cạnh b");
+        let c = prompt("Nhập cạnh c");
+        if (a + b <=c && a + c <=b && b + c <=a) {
+            alert("Đây không phải là tam giác")
+        } else if (a * a + b * b== c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
+            alert("Tam giác vuông")
+        } else if (a == b && b == c && a==c) {
+            alert("Tam giác đều") 
+        
+        } else if (a == b || a == c || b == c) {
+            alert("Tam giác cân")
+        }
+            else {
+            alert("Đây là tam giác thường")
+        }
+        
+
+    </script>
+</body>
+
+</html>
